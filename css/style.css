@@ -1,0 +1,276 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.container{
+    width: 80%;
+    overflow: hidden;
+}
+#home {
+width: 100%;
+background: linear-gradient(rgba(0, 0, 0, 0.736)), url('../images/agency-1.jpg');
+height: 100dvh;
+}
+
+.child_home_content .size{
+    font-size: 100px;
+}
+
+
+
+#about{
+    width: 100%;
+    /* height: 40dvh; */
+}
+.button .btu_home{
+    color: white;
+}
+.button .btu_home:hover{
+    background-color: white;
+    color: rgb(0, 0, 0);
+    border-color: white;
+}
+
+.homebar{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background-color: white;
+    z-index: 1;
+}
+
+.card .layer{
+    background-color: rgba(0, 0, 0, 0.384);
+    width: 100%;
+    height: 100dvb;
+    top: 1px;
+    text-align: center;
+    opacity: 0;
+    transition: all 0.5s;
+}
+.card .layer p{
+    /* margin-block: 200px; */
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+.layer:hover {
+    opacity: 100%;
+}
+
+/* vgg */
+
+#Our_Work{
+    width: 100%;
+    /* height: 100dvh;  */
+}
+.test_content .h4_test_content{
+    padding-inline: 150px;
+}
+#Our_Work .rounded_splider{
+    border: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-block: 30px;
+}
+
+.button_Our_work .btu_Our_work{
+    color: white;
+}
+.button_Our_work .btu_Our_work:hover{
+    background-color: #333333;
+    color: rgb(255, 255, 255);
+    border-color: white ;
+}
+
+
+
+
+#div4{
+    width: 100%;
+    background-color:#1B1B1B;
+}
+#div4 .icon{
+    font-size: 40px;
+    color: #065CC7;
+    padding-top: 35px;
+    /* margin-block: 30px; */
+
+}
+#div4 .rounded_splider{
+    border: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    /* margin-block: 30px; */
+}
+
+
+#News{
+    width: 100%;
+    /* height: 80dvh; */
+    background-color: #F8F8F8;
+}
+#News .news_icon{
+    font-size: 13px;
+    padding-top: 20px;
+    /* margin-block: 25px; */
+    transition: all 1s;
+}
+#News .news_icon:hover{
+ transform: translateX(10px);
+
+}
+#News .rounded_splider{
+    border: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-block: 30px;
+}
+
+
+#contant{
+    background-color: #0461D5;
+}
+#contant .btu_Our_work{
+    color: #ffffff;
+    background-color: transparent;
+    border-color: white;
+}
+#contant .btu_Our_work:hover{
+    color: #000000;
+    background-color: white;
+}
+
+#Contact_Details{
+    background-color: #1B1B1B;
+}
+#Contact_Details .icon_Contact_Details{
+    font-size: 13px;
+    padding: 5px;
+}
+
+
+#endsection{
+    background-color: #151515;
+}
+
+#endsection .facebook_icon{
+    font-size: 30px;
+    padding: 3px;
+    color: #504e4e; 
+}
+#endsection .facebook_icon:hover{
+    color: #3B5998;
+}
+#endsection .google_icon{
+    font-size: 30px;
+    padding: 3px;
+    color: #504e4e; 
+}
+#endsection .google_icon:hover{
+    color:#DD4B39;
+}
+#endsection .linkedin-in_icon{
+    font-size: 30px;
+    padding: 3px;
+    color: #504e4e; 
+}
+#endsection .linkedin-in_icon:hover{
+    color:#007BB5;
+}
+#endsection .twitter_icon{
+    font-size: 30px;
+    padding: 3px;
+    color: #504e4e; 
+}
+#endsection .twitter_icon:hover{
+    color:#00ACED;
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;          
+  height: 40px;         
+  background-color: #68686D; 
+  border: none;
+  border-radius: 50%;
+  margin: 10px;
+  text-align: center;
+  z-index: 100;
+}
+.scroll-to-top .icon{
+  font-size: 25px;
+  color: white;
+  margin: auto;
+  padding: 6px;
+}
+.scroll-to-top:hover {
+  background-color: #2d2b2b;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 990px) {
+  .child_home_content .size{
+        font-size: 80px;
+    }
+    .test_content .h4_test_content{
+        padding-inline: 20px;
+    }
+}
+@media screen and (min-width: 424px) and (max-width: 767px) {
+  .child_home_content .size{
+        font-size: 70px;
+    }
+    .btu_home{
+        margin-top: 20px;
+    }
+    .test_content .h4_test_content{
+        padding-inline: 0px;
+    }
+}
+@media screen and (min-width: 374px) and (max-width: 424px) {
+  .child_home_content .size{
+        font-size: 70px;
+    }
+    .btu_home{
+        margin-top: 20px;
+    }
+    .test_content .h4_test_content{
+        padding-inline: 0px;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 374px) {
+  .child_home_content .size{
+        font-size: 70px;
+    }
+    .btu_home{
+        margin-top: 20px;
+    }
+    .test_content .h4_test_content{
+        padding-inline: 0px;
+    }
+}
+@media screen and (min-width: 991px) and (max-width: 1200px) {
+  .child_home_content .size{
+        font-size: 90px;
+    }
+    .test_content .h4_test_content{
+        padding-inline: 50px;
+    }
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1440px) {
+    .child_home_content .size{
+        font-size: 100px;
+    }
+}
