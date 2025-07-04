@@ -3,78 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>creative-agency</title>
-    <link rel="stylesheet" href="css/all.min.css">
+    <title>Engage Agency</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  
-<div id="homenavbar" class="homebar shadow-sm">  
-    <nav class="navbar navbar-expand-lg ">
-            <div class="container">
-                <a class="navbar-brand " href="#home">
-                    <img src="images/logo-dark.png" alt="" width="150px" >
-                </a>
+ <div id="homebar" class="bg-white shadow-sm">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg ">
+        
+                <a class="navbar-brand" href="#"><img src="images/logo-dark.png" alt="" width="150px"></a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
-
-                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Home
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Home </a></li>
-                            <li><a class="dropdown-item" href="#">Home 2</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#Contact_Details">About</a>
+                    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Home
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark my-2">
+                        <li><a class="dropdown-item" href="#">Home 1</a></li>
+                        <li><a class="dropdown-item" href="#">Home 2</a></li>
+                        <li><a class="dropdown-item" href="#">Home 3</a></li>
+                        <li><a class="dropdown-item" href="#">Home 4</a></li>
+                    </ul>
                     </li>
 
                     <li class="nav-item">
-                    <a class="nav-link " aria-current="page" href="#div4">Services</a>
+                    <a class="nav-link" aria-current="page" href="#">About</a>
                     </li>
 
                     <li class="nav-item">
-                    <a class="nav-link " aria-current="page" href="#icons">Pricing</a>
+                    <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">pricing</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Our work</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">contact</a>
                     </li>
 
-                    <li class="nav-item">
-                    <a class="nav-link " aria-current="page" href="#Our_Work">Our Work</a>
-                    </li>
 
-                    <li class="nav-item">
-                    <a class="nav-link " aria-current="page" href="#News">News</a>
-                    </li>
-                    
-                </ul>
-                <form class="d-flex ms-2" role="search">
-                    <button class="btn bg-primary rounded-pill text-light px-3 " type="submit">CONTANT</button>
-                </form>
-                
-                </div>
+                    <div class="model">
+                        <button type="button" class="btn bg-transparent" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <i class="fa-solid fa-magnifying-glass homebar_icon"></i>
+                        </button>
+                    </div> 
+                </ul> 
+                  
+            </div> 
+
+                   
+        </nav>      
+    </div>
+</div> 
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content modelbg_color">
+      <div class="modal-header border border-0">     
+        <button type="button" class="btn-close btn-close-white"  data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body ">
+        <form class="d-flex m-auto justify-content-center align-items-center  h-100" role="search">
+            <div class="search_cont position-relative w-100 m-auto">
+                <input class="form-control p-5 m-5 w-50 m-auto bg-transparent border-0 border-bottom border-2 text-secondary-emphasis fs-1 border-secondary-subtle rounded-0" type="search" placeholder="Search..." aria-label="Search"/>
+                <button class="btn position-absolute btnposi " type="submit"><i class="fa-solid fa-magnifying-glass homebar_icon"></i></button>
             </div>
-    </nav>  
+        </form>
+      </div>
+    </div>
+  </div>
 </div>
 
-<div id="home" class="py-5">
-    <div class="container text-center h-100">
-        <div class="home_content d-flex justify-content-center align-items-center  h-100">
-            <div class="child_home_content">
-                <h1 class="text-light size">Creative Agency</h1>
-                <p class="text-light fs-3 py-2">Welcome to the home of world's brightest ideas.</p>
-                <div class="button">
-                    <button type="button" class="btn btn-light rounded-pill py-3 px-5 ms-2 me-3 ">About Us  </button>
-                    <button type="button" class="btn btn-primary rounded-pill py-3 px-5 ms-2 me-3 btu_home">PORTFOLIO</button>   
-                 </div>
+<div id="home" class="py-5 px-md-5">
+    <div class="container h-100 px-md-5">
+        <div class="perant d-flex justify-content-center align-items-center h-100 pt-5">
+            <div class="child text-center">
+                <p class="fs-4 text-white">Welcome to</p>
+                <p class="h1 display-3 fw-medium text-white">Engage Agency</p>
+                <p class="fs-4 mx-md-5 mx-sm-0 px-lg-5 px-md-5 px-sm-1 pt-3 text-white">We're the biggest, best equipped and most advanced Web Agency in the greater Los Angeles area.</p>
+                <div class="buttons">
+                    <button type="button" class="btn btn-light buttonw fw-semibold mt-2 fontfamily">LEARN MORE</button>
+                </div>
             </div>
         </div>
     </div>
@@ -84,486 +111,843 @@
   <i class="fa-solid fa-angle-up icon"></i>
 </a>
 
-<div id="about" class="py-5">
-    <div class="container h-100 py-3">
-        <div class="row h-100 g-2">
+<div id="What_do_we_do" class="p-5">
 
-            <div class="col-md-4 col-lg-4 p-md-4 col-sm-6">
+    <div class="container1 m-auto">
+        <div class="what_do_content text-center padd mt-5">
+            <h2 class=" padd fontSize fontfamily">What do we do?</h2>
+            <p class="padd fontSize1 px-xl-5 px-md-1 px-sm-0 pt-4 text-center text-body-secondary fontfamily">Nunc id ante quis tellus faucibus dictum in eget metus. Duis suscipit elit sem, sed mattis tellus accumsan eget. Quisque consequat venenatis rutrum. Quisque posuere enim augue, in rhoncus diam dictum non. Etiam mollis pulvinar nisl.</p>
+        </div>
+    </div>
+
+    <div class="container h-100">
+        
+        <div class="row g-4 my-5">
+
+            <div class="col-md-6 col-lg-4">
                 <div class="dflex d-flex">
-                    <span><i class="fa-solid fa-sliders pe-2"></i></span>
+                    <span><i class="fa-solid fa-sliders pe-3 text-body-secondary fs-4"></i></span>
                     <div class="contant">
-                        <h5>Powerful Options</h5>
-                        <p class="text-body-secondary">Take a full control over all aspects of your theme with our truly extensive Options Panel.</p>
+                        <h6 class="text-dark"> Powerful Options</h6>
+                        <p class="text-body-secondary fontfamily1">Take a full control over all aspects of your theme with our truly extensive Options Panel.</p>
+                    </div>
+                </div> 
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="dflex d-flex">
+                    <span><i class="fa-solid fa-tv pe-3 text-body-secondary fs-4"></i></span>
+                    <div class="contant">
+                       <h6 class="text-dark">Responsive Design</h6>
+                       <p class="text-body-secondary fontfamily1">Engage is a fully responsive and retina ready theme that scales well to all mobile devices.</p>
+                    </div>
+                </div> 
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="dflex d-flex">
+                    <span><i class="fa-solid fa-pencil pe-3 text-body-secondary fs-4"></i></span>
+                    <div class="contant">
+                       <h6 class="text-dark">Satisfied Clients</h6>
+                        <p class="text-body-secondary fontfamily1">Build any layout you can think of with the most powerful page builder Visual Composer.</p>
+                    </div>
+                </div> 
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="dflex d-flex">
+                    <span><i class="fa-solid fa-bullhorn pe-3 text-body-secondary fs-3"></i></span>
+                    <div class="contant">
+                        <h6 class="text-dark">Demo Content</h6>
+                        <p class="text-body-secondary">All of presented layouts and theme demo pages are available with a single mouse click..</p>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-6 col-lg-4 p-md-4 col-sm-6">
+            <div class="col-md-6 col-lg-4">
                 <div class="dflex d-flex">
-                    <span><i class="fa-solid fa-tv pe-2"></i></span>
+                    <span><i class="fa-regular fa-comment pe-3 text-body-secondary fs-3"></i></span>
                     <div class="contant">
-                        <h5>Responsive Design</h5>
-                        <p class="text-body-secondary">Engage is a fully responsive and retina ready theme that scales well to all mobile devices.</p>
+                        <h6 class="text-dark">Free Support</h6>
+                        <p class="text-body-secondary fontfamily1">Our top-notch support team will be more than happy to answer any of your questions.</p>
                     </div>
-                </div>                
+                </div> 
+                
             </div>
 
-            <div class="col-md-6 col-lg-4 p-md-4 px-md-5">
-                 <div class="dflex d-flex">
-                    <span> <i class="fa-solid fa-pencil pe-2"></i></span>
+            <div class="col-md-6 col-lg-4">
+                <div class="dflex d-flex">
+                    <span><i class="fa-regular fa-newspaper pe-3 text-body-secondary fs-3"></i></span>
                     <div class="contant">
-                         <h5>Satisfied Clients</h5>
-                       <p class="text-body-secondary">Build any layout you can think of with the most powerful page builder Visual Composer.</p>
+                        <h6 class="text-dark">Documentation</h6>
+                        <p class="text-body-secondary">Everything you need to know about the theme is located in the extensive documentation.</p>
                     </div>
-                </div>                
+                </div>
+                
             </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="dflex d-flex">
+                    <span><i class="fa-regular fa-star pe-3 text-body-secondary fs-3"></i></span>
+                    <div class="contant">
+                        <h6 class="text-dark">Google Fonts</h6>
+                        <p class="text-body-secondary">You may choose any font from the extensive Google Fonts library with a single mouse click.</p>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="dflex d-flex">
+                    <span><i class="fa-solid fa-images pe-3 text-body-secondary fs-3"></i></span>
+                    <div class="contant">
+                        <h6 class="text-dark">Premium Sliders</h6>
+                        <p class="text-body-secondary">Engage comes with two most powerful sliders out there: Revolution Slider and Layer Slider.</p>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="dflex d-flex">
+                    <span><i class="fa-regular fa-gem pe-3 text-body-secondary fs-3"></i></span>
+                    <div class="contant">
+                        <h6 class="text-dark">Styling Options</h6>
+                        <p class="text-body-secondary">Adjust the looks of your theme with the extensive Styling panel. Possibilities are endless.</p>
+                    </div>
+                </div>      
+            </div>
+
         </div>
     </div>
 </div>
 
-<div id="Our_Work" class="bg-body-tertiary py-5" >
+<div id="Recent-Work">
     <div class="container h-100">
+        <div class="Recent-Work-content text-center">
+            <h1>Recent Work</h1>
+            <p>This is a subtitle, feel free to change it!</p>
+        </div>
 
-        <div class="test_content text-center p-md-5">
-            <h2 class="fs-1 fw-bold pt-5">Our Work</h2>
-            <p class="text-body-tertiary fs-4 py-3 h4_test_content">Morbi pellentesque, nisl id semper bibendum, nibh sem fermentum magna, eget commodo leo velit sit amet velit. Aliquam fermentum, lorem.</p>
+        <div id="carouselExample" class="carousel slide">
+
+            <div class="carousel-indicators position-static">
+                <div class="row g-xl-5 g-lg-5 rowgap">
+                    <div class="col">
+                        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active bg-transparent  btn_look " aria-current="true" aria-label="Slide 1">ShowAll</button>
+                    </div>
+                    <div class="col">
+                       <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" class="bg-transparent btn_look  " aria-label="Slide 2">Design</button>
+                    </div>
+                    <div class="col">
+                         <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" class="bg-transparent  btn_look " aria-label="Slide 3">Graphics</button>
+                    </div>
+                    <div class="col">
+                        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="3" class="bg-transparent  btn_look " aria-label="Slide 4">Mockups</button>
+                    </div>
+                    <div class="col">
+                         <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="4" class="bg-transparent  btn_look " aria-label="Slide 5">Other</button>
+                    </div>
+                    <div class="col">
+                         <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="5" class="bg-transparent  btn_look " aria-label="Slide 6">Photography</button>
+                    </div>
+                    <div class="col">
+                         <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="6" class="bg-transparent  btn_look px-5 mx-2" aria-label="Slide 7">Planning</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <div id="show-all" class="row g-4 ">
+
+                        <div class="col-md-6 col-lg-4">  
+                            <div class="card"> 
+                                <div class="divimage position-relative overflow-hidden">
+                                    <img src="images/Paper-Pouch-Packaging-MockUp-600x600 (1).jpg" class="card-img-top imghover" alt="..." width="100%">  
+                                    <div class="layer position-absolute w-100 text-center">
+                                        <button type="button" class="btn bg-transparent" data-bs-toggle="modal" data-bs-target="#image1">
+                                            <i class="fa-solid fa-magnifying-glass icons"></i>
+                                        </button>
+                                        <i class="fa-solid fa-paperclip icons"></i>
+                                    </div> 
+                                </div>
+                                <div class="card-body">    
+                                    <p class="card-text">Cool Pag</p>
+                                    <p>Other, Planning</p>
+                                </div>
+
+                                
+                            </div>     
+                        </div>
+
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card ">
+                                <div class="divimage position-relative overflow-hidden">
+                                    <img src="images/tags-600x600 (1).jpg" class="card-img-top imghover" alt="..." width="100%">  
+                                    <div class="layer position-absolute w-100 text-center">
+                                        <button type="button" class="btn bg-transparent" data-bs-toggle="modal" data-bs-target="#image1">
+                                            <i class="fa-solid fa-magnifying-glass icons"></i>
+                                        </button>
+                                        <i class="fa-solid fa-paperclip icons"></i>
+                                    </div> 
+                                </div>
+                                        
+                                <div class="card-body position-relative">
+                                    <p class="card-text">Birlliant tags</p>
+                                    <p>Mockups</p>
+                                </div>                                      
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card">
+                                <div class="divimage position-relative overflow-hidden">
+                                    <img src="images/Preview-1-600x600 (1).jpg" class="card-img-top imghover" alt="..." width="100%">
+                                    <div class="layer position-absolute w-100 text-center">
+                                        <button type="button" class="btn bg-transparent" data-bs-toggle="modal" data-bs-target="#image1">
+                                            <i class="fa-solid fa-magnifying-glass icons"></i>
+                                        </button>
+                                        <i class="fa-solid fa-paperclip icons"></i>
+                                    </div> 
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">Slider Post</p>
+                                    <p>Design</p>
+                                </div>     
+                             </div>
+                                    
+                        </div>
+
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card">
+                                <div class="divimage position-relative overflow-hidden">
+                                    <img src="images/Photorealistic-Magazine-MockUp-2-full-600x600 (1).jpg" class="card-img-top imghover" alt="..." width="100%">
+                                    <div class="layer position-absolute w-100 text-center">
+                                        <button type="button" class="btn bg-transparent" data-bs-toggle="modal" data-bs-target="#image1">
+                                            <i class="fa-solid fa-magnifying-glass icons"></i>
+                                        </button>
+                                        <i class="fa-solid fa-paperclip icons"></i>
+                                    </div> 
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">Basic Post</p>
+                                    <p>Photography</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4">
+                                    <div class="card">
+                                        <div class="divimage position-relative overflow-hidden">
+                                            <img src="images/A4-Paper-PSD-MockUp-4-600x600 (1).jpg" class="card-img-top imghover" alt="..." width="100%">
+                                            <div class="layer position-absolute w-100 text-center">
+                                                <button type="button" class="btn bg-transparent" data-bs-toggle="modal" data-bs-target="#image1">
+                                                    <i class="fa-solid fa-magnifying-glass icons"></i>
+                                                </button>
+                                                <i class="fa-solid fa-paperclip icons"></i>
+                                            </div> 
+                                        </div>
+                                        
+                                        <div class="card-body">
+                                            <p class="card-text">Extended Post</p>
+                                            <p>Graphics, Photography</p>
+                                        </div>
+                                    </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4">
+                                    <div class="card">
+                                        <div class="divimage position-relative overflow-hidden">
+                                            <img src="images/Shopping-Bag-PSD-MockUp-2-600x600 (1).jpg" class="card-img-top imghover" alt="..." width="100%">
+                                            <div class="layer position-absolute w-100 text-center">
+                                                <button type="button" class="btn bg-transparent" data-bs-toggle="modal" data-bs-target="#image1">
+                                                    <i class="fa-solid fa-magnifying-glass icons"></i>
+                                                </button>
+                                                <i class="fa-solid fa-paperclip icons"></i>
+                                            </div> 
+                                        </div>
+                                        <div class="card-body">
+                                            <p class="card-text">Video Post</p>
+                                            <p>Mockups</p>
+                                        </div>
+                                    </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                     <div id="design-n" class="row">
+                         <div class="col-md-6 col-lg-4">
+                            <div class="card">
+                                <div class="divimage position-relative overflow-hidden">
+                                          <img src="images/Preview-1-600x600 (1).jpg" class="card-img-top imghover" alt="...">
+                                            <div class="layer position-absolute w-100 text-center">
+                                                <button type="button" class="btn bg-transparent" data-bs-toggle="modal" data-bs-target="#image1">
+                                                    <i class="fa-solid fa-magnifying-glass icons"></i>
+                                                </button>
+                                                <i class="fa-solid fa-paperclip icons"></i>
+                                            </div> 
+                                </div>
+                                
+                                <div class="card-body">
+                                    <p class="card-text">Slider Post</p>
+                                    <p>Design</p>
+                                </div>
+                            </div>      
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div id="Graphics" class="row">
+                        <div class="col-md-6 col-lg-4">
+                                <div class="card">
+                                    <div class="divimage position-relative overflow-hidden">
+                                           <img src="images/A4-Paper-PSD-MockUp-4-600x600 (1).jpg" class="card-img-top imghover" alt="...">
+                                            <div class="layer position-absolute w-100 text-center">
+                                                <button type="button" class="btn bg-transparent" data-bs-toggle="modal" data-bs-target="#image1">
+                                                    <i class="fa-solid fa-magnifying-glass icons"></i>
+                                                </button>
+                                                <i class="fa-solid fa-paperclip icons"></i>
+                                            </div> 
+                                    </div>
+                                    
+                                <div class="card-body">
+                                    <p class="card-text">Extended Post</p>
+                                    <p>Graphics, Photography</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div id="Mockups" class="row">
+                        <div class="col-md-6 col-lg-4">
+                                <div class="card ">
+                                    <div class="divimage position-relative overflow-hidden">
+                                          <img src="images/tags-600x600 (1).jpg" class="card-img-top imghover" alt="...">
+                                            <div class="layer position-absolute w-100 text-center">
+                                                <button type="button" class="btn bg-transparent" data-bs-toggle="modal" data-bs-target="#image1">
+                                                    <i class="fa-solid fa-magnifying-glass icons"></i>
+                                                </button>
+                                                <i class="fa-solid fa-paperclip icons"></i>
+                                            </div> 
+                                    </div>
+                                    
+                                <div class="card-body position-relative">
+                                    <p class="card-text">Birlliant tags</p>
+                                    <p>Mockups</p>
+                                </div>        
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card">
+                                <div class="divimage position-relative overflow-hidden">
+                                          <img src="images/Shopping-Bag-PSD-MockUp-2-600x600 (1).jpg" class="card-img-top imghover" alt="...">
+                                            <div class="layer position-absolute w-100 text-center">
+                                                <button type="button" class="btn bg-transparent" data-bs-toggle="modal" data-bs-target="#image1">
+                                                    <i class="fa-solid fa-magnifying-glass icons"></i>
+                                                </button>
+                                                <i class="fa-solid fa-paperclip icons"></i>
+                                            </div> 
+                                    </div>
+                                
+                                <div class="card-body">
+                                    <p class="card-text">Video Post</p>
+                                    <p>Mockups</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                        <div id="Other" class="row">
+                            <div class="col-md-6 col-lg-4">  
+                                <div class="card"> 
+                                    <div class="divimage position-relative overflow-hidden">
+                                          <img src="images/Paper-Pouch-Packaging-MockUp-600x600 (1).jpg" class="card-img-top imghover" alt="..." width="100%">
+                                            <div class="layer position-absolute w-100 text-center">
+                                                <button type="button" class="btn bg-transparent" data-bs-toggle="modal" data-bs-target="#image1">
+                                                    <i class="fa-solid fa-magnifying-glass icons"></i>
+                                                </button>
+                                                <i class="fa-solid fa-paperclip icons"></i>
+                                            </div> 
+                                    </div>
+                                    <div class="card-body">    
+                                        <p class="card-text">Cool Pag</p>
+                                        <p>Other, Planning</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div id="Photography" class="row">
+                        <div class="col-md-6 col-lg-4">
+                                <div class="card">
+                                    <div class="divimage position-relative overflow-hidden">
+                                         <img src="images/Photorealistic-Magazine-MockUp-2-full-600x600 (1).jpg" class="card-img-top imghover" alt="...">
+                                            <div class="layer position-absolute w-100 text-center">
+                                                <button type="button" class="btn bg-transparent" data-bs-toggle="modal" data-bs-target="#image1">
+                                                    <i class="fa-solid fa-magnifying-glass icons"></i>
+                                                </button>
+                                                <i class="fa-solid fa-paperclip icons"></i>
+                                            </div> 
+                                    </div>
+                                    
+                                    <div class="card-body">
+                                        <p class="card-text">Basic Post</p>
+                                        <p>Photography</p>
+                                    </div>
+                                    
+                                </div>
+                        </div>
+
+                            <div class="col-md-6 col-lg-4">
+                                <div class="card">
+                                    <div class="divimage position-relative overflow-hidden">
+                                         <img src="images/A4-Paper-PSD-MockUp-4-600x600 (1).jpg" class="card-img-top imghover" alt="...">
+                                            <div class="layer position-absolute w-100 text-center">
+                                                <button type="button" class="btn bg-transparent" data-bs-toggle="modal" data-bs-target="#image1">
+                                                    <i class="fa-solid fa-magnifying-glass icons"></i>
+                                                </button>
+                                                <i class="fa-solid fa-paperclip icons"></i>
+                                            </div> 
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text">Extended Post</p>
+                                        <p>Graphics, Photography</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div id="Planning" class="row">
+                        <div class="col-md-6 col-lg-4">  
+                            <div class="card"> 
+                                <div class="divimage position-relative overflow-hidden">
+                                         <img src="images/Paper-Pouch-Packaging-MockUp-600x600 (1).jpg" class="card-img-top imghover" alt="..." width="100%">
+                                            <div class="layer position-absolute w-100 text-center">
+                                                <button type="button" class="btn bg-transparent" data-bs-toggle="modal" data-bs-target="#image1">
+                                                    <i class="fa-solid fa-magnifying-glass icons"></i>
+                                                </button>
+                                                <i class="fa-solid fa-paperclip icons"></i>
+                                            </div> 
+                                    </div>
+                                <div class="card-body">    
+                                    <p class="card-text">Cool Pag</p>
+                                    <p>Other, Planning</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>   
+    </div>
+</div>
+
+<div class="models-container">
+    <div class="modal fade" id="image2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="image2Label" aria-hidden="true">
+                <div class="modal-dialog modelimg-witdh">
+
+                    <div class="modal-content bg-transparent border-0">
+                    <div class="modal-header border-0">
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body w-100 "> 
+                            <img src="images/tags-600x600 (1).jpg" alt="..." width="100%">
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+    <div class="modal fade" id="image1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="image1Label" aria-hidden="true">
+                <div class="modal-dialog modelimg-witdh">
+
+                    <div class="modal-content bg-transparent border-0">
+                    <div class="modal-header border-0">
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body w-100 "> 
+                            <img src="images/Paper-Pouch-Packaging-MockUp-600x600 (1).jpg" alt="" width="100%">
+                    </div>
+                    </div>
+                </div>
+        </div>
+
+    <div class="modal fade" id="image3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="image3Label" aria-hidden="true">
+                <div class="modal-dialog modelimg-witdh">
+
+                    <div class="modal-content bg-transparent border-0">
+                    <div class="modal-header border-0">
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body w-100 "> 
+                            <img src="images/Preview-1-600x600 (1).jpg" alt="" width="100%">
+                    </div>
+                    </div>
+                </div>
+        </div>
+    <div class="modal fade" id="image4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="image4Label" aria-hidden="true">
+                <div class="modal-dialog modelimg-witdh">
+
+                    <div class="modal-content bg-transparent border-0">
+                    <div class="modal-header border-0">
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body w-100 "> 
+                            <img src="images/Photorealistic-Magazine-MockUp-2-full-600x600 (1).jpg" alt="" width="100%">
+                    </div>
+                    </div>
+                </div>
+    </div>
+    <div class="modal fade" id="image5" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="image5Label" aria-hidden="true">
+                <div class="modal-dialog modelimg-witdh">
+
+                    <div class="modal-content bg-transparent border-0">
+                    <div class="modal-header border-0">
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body w-100 "> 
+                            <img src="images/A4-Paper-PSD-MockUp-4-600x600 (1).jpg" alt="" width="100%">
+                    </div>
+                    </div>
+                </div>
+    </div>
+    <div class="modal fade" id="image6" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="image6Label" aria-hidden="true">
+                <div class="modal-dialog modelimg-witdh">
+
+                    <div class="modal-content bg-transparent border-0">
+                    <div class="modal-header border-0">
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body w-100 "> 
+                            <img src="images/Shopping-Bag-PSD-MockUp-2-600x600 (1).jpg" alt="" width="100%">
+                    </div>
+                    </div>
+                </div>
+    </div>
+</div>
+
+
+
+
+<div id="Testimonials" class="py-5">
+    <div class="container h-100">
+         <div class="test_content text-cent text-center">
+            <h2>Testimonials</h2>
+            <p class="text-body-tertiary p-size">What our awesome clients say about us.</p>
         </div>
 
         <div id="carouselExampleIndicators" class="carousel slide">
-        <div class="carousel-inner">
-
-            <div class="carousel-item active">
-                 <div class="row g-3">
-                    <div class="col-md-6 col-lg-4">
-                        <div class="card border-0 rounded overflow-hidden">
-                            <div class="card-body bg-body-tertiary position-relative p-0">
-                                <img src="images/Paper-Pouch-Packaging-MockUp-600x600.jpg" alt="" class="w-100">
-                                <div class="layer position-absolute">
-                                    <div class="divcontant h-50  d-flex justify-content-center align-items-center">
-                                         <p class="text-center w-50">Cool Bag</p>
-                                    </div>
-                                   
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="card border-0 rounded overflow-hidden">
-                            <div class="card-body bg-body-tertiary position-relative p-0">
-                                <img src="images/tags-600x600.jpg" alt="" class="w-100">
-                                <div class="layer position-absolute">
-                                    <div class="divcontant h-50  d-flex justify-content-center align-items-center">
-                                         <p class="text-center w-50">Birlliant tags</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="card border-0 rounded overflow-hidden">
-                            <div class="card-body bg-body-tertiary position-relative p-0">
-                                <img src="images/Preview-1-600x600.jpg" alt="" class="w-100">
-                                
-                                <div class="layer position-absolute">
-                                    <div class="divcontant h-50  d-flex justify-content-center align-items-center">
-                                         <p class="text-center w-50">Slider Post</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="carousel-item ">
-                
-                <div class="row g-3">
-                    <div class="col-md-6 col-lg-4">
-                        <div class="card border-0 rounded overflow-hidden">
-                            <div class="card-body bg-body-tertiary position-relative p-0">
-                                <img src="images/Photorealistic-Magazine-MockUp-2-full-600x600.jpg" alt="" class="w-100">
-                                <div class="layer position-absolute">
-                                    <div class="divcontant h-50  d-flex justify-content-center align-items-center">
-                                         <p class="text-center w-50">Cool Bag</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="card border-0 rounded overflow-hidden">
-                            <div class="card-body bg-body-tertiary position-relative p-0">
-                                <img src="images/A4-Paper-PSD-MockUp-4-600x600.jpg" alt="" class="w-100">
-                                <div class="layer position-absolute">
-                                    <div class="divcontant h-50  d-flex justify-content-center align-items-center">
-                                         <p class="text-center w-50">Birlliant tags</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="card border-0 rounded overflow-hidden">
-                            <div class="card-body bg-body-tertiary position-relative p-0">
-                                <img src="images/Shopping-Bag-PSD-MockUp-2-600x600.jpg" alt="" class="w-100">
-                                <div class="layer position-absolute">
-                                    <div class="divcontant h-50  d-flex justify-content-center align-items-center">
-                                         <p class="text-center w-50">Slider Post</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="carousel-item ">
-                 <div class="row g-3">
-                    <div class="col-md-6 col-lg-4">
-                        <div class="card border-0 rounded overflow-hidden">
-                            <div class="card-body bg-body-tertiary position-relative p-0">
-                                <img src="images/Ceramic-Bottles-PSD-Mockups-full-600x600.jpg" alt="" class="w-100">
-                                <div class="layer position-absolute">
-                                    <div class="divcontant h-50  d-flex justify-content-center align-items-center">
-                                         <p class="text-center w-50">Slider Post</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="card border-0 rounded overflow-hidden">
-                            <div class="card-body bg-body-tertiary position-relative p-0">
-                                <img src="images/Paper-Pouch-Packaging-MockUp-600x600.jpg" alt="" class="w-100">
-                                <div class="layer position-absolute"><div class="divcontant h-50  d-flex justify-content-center align-items-center">
-                                         <p class="text-center w-50">Cool Bag</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="card border-0 rounded overflow-hidden">
-                            <div class="card-body bg-body-tertiary position-relative p-0">
-                                <img src="images/tags-600x600.jpg" alt="" class="w-100">
-                                <div class="layer position-absolute">
-                                    <div class="divcontant h-50  d-flex justify-content-center align-items-center">
-                                         <p class="text-center w-50">Birlliant tags</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-        <div class="carousel-indicators position-static">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active bg-black rounded_splider" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" class="bg-black rounded_splider"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" class="bg-black rounded_splider"></button>
-        </div>
-
-        </div>
-
-        <div class="button_Our_work text-center">
-            <button type="button" class="btn btn-primary rounded-pill py-4 px-5 my-5 fw-bold m-auto btu_Our_work">VIEW ALL</button>
-        </div>
-
-    </div>
-</div>
-
-
-<div id="div4" class="py-5">
-     <div class="container h-100">
-         <div class="div4_icon text-center">
-           <i class="fa-regular fa-comment icon"></i>
-        </div>
-
-        <div id="carouselExampleIndi" class="carousel slide">
-            <div class="carousel-inner">
-
-                <div class="carousel-item active ">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="card border-0 rounded overflow-hidden bg-transparent">
-                                <div class="card-body text-center px-md-5 py-md-5">
-                                    <p class="text-center text-light-emphasis fs-2 ">"Per seacula quarta decima et quinta decima. 
-                                        Modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum quarta decima.
-                                         Lorem ipsum dolorum have a great day."
-                                    </p>
-                                </div>
-                                <div class="card-footer text-center border-0 bg-transparent">
-                                    <p class="text-white fs-5 fw-medium">Steve Morris</p>
-                                    <p class="text-dark-emphasis fs-6 fw-medium">Fashion Top</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="carousel-item ">   
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="card border-0 rounded overflow-hidden bg-transparent ">
-                                <div class="card-body text-center px-md-5 py-md-5">
-                                    <p class="text-center text-light-emphasis fs-2">"Per seacula quarta decima et quinta decima. 
-                                        Modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum quarta decima.
-                                         Lorem ipsum dolorum have a great day."
-                                    </p>
-                                </div>
-                                <div class="card-footer text-center border-0 ">
-                                    <p class="text-white fs-5 fw-medium">Steve Morris</p>
-                                    <p class="text-light-emphasis fs-6 fw-medium ">Fashion Top</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="carousel-item ">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="card border-0 rounded overflow-hidden bg-transparent ">
-                                <div class="card-body text-center px-md-5 py-md-5">
-                                    <p class="text-center text-light-emphasis fs-2">"Per seacula quarta decima et quinta decima. 
-                                        Modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum quarta decima.
-                                         Lorem ipsum dolorum have a great day."
-                                    </p>
-                                </div>
-                                <div class="card-footer text-center border-0 ">
-                                    <p class="text-white fs-5 fw-medium">Steve Morris</p>
-                                    <p class="text-light-emphasis fs-6 fw-medium ">Fashion Top</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item ">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="card border-0 rounded overflow-hidden bg-transparent ">
-                                <div class="card-body text-center px-md-5 py-md-5">
-                                    <p class="text-center text-light-emphasis fs-2">"Per seacula quarta decima et quinta decima. 
-                                        Modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum quarta decima.
-                                         Lorem ipsum dolorum have a great day."
-                                    </p>
-                                </div>
-                                <div class="card-footer text-center border-0 ">
-                                    <p class="text-white fs-5 fw-medium">Steve Morris</p>
-                                    <p class="text-light-emphasis fs-6 fw-medium ">Fashion Top</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="carousel-indicators position-static">
-                <button type="button" data-bs-target="#carouselExampleIndi" data-bs-slide-to="0" class="active bg-black rounded_splider" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndi" data-bs-slide-to="1" aria-label="Slide 2" class="bg-black rounded_splider"></button>
-                <button type="button" data-bs-target="#carouselExampleIndi" data-bs-slide-to="2" aria-label="Slide 3" class="bg-black rounded_splider"></button>
-                <button type="button" data-bs-target="#carouselExampleIndi" data-bs-slide-to="3" aria-label="Slide 4" class="bg-black rounded_splider"></button>
-            </div>
-
-        </div>
-     </div>
-</div>
-
-<div id="News" class="py-5">
-     <div class="container h-100">
-
-        <div class="News_heading text-center py-5">
-          <h1 class="fs-1 fw-bold">Latest News</h1>
-        </div>
-
-        <div id="carousel" class="carousel slide py-3">
+            
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <div class="row g-3">
+                    <div class="row py-5">
                         <div class="col-md-6 col-lg-4">
-                                <div class="card border-0 rounded overflow-hidden">
-                                    <div class="card-body px-md-4 bg-white">
-                                        <h5 class="fw-bold ">Simple Post</h5>
-                                        <p class="text-body-secondary lh-lg fs-5 ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus excepturi,
-                                            quas consequatur,...
-                                        </p>
-                                        <a href="#" class="card-link text-decoration-none colorhover readhover">Read more <i class="fa-solid fa-arrow-right news_icon"></i></a>
-                                    </div>
+                            <div class="card border-0 rounded overflow-hidden">
+                                <div class="card-body bg-body-tertiary p-4">
+                                    <p class="text-body-secondary fs-6 lh-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus excepturi,
+                                        quas consequatur voluptatem sunt unde magnam voluptate soluta totam distinctio, eius.
+                                    </p>
                                 </div>
+                                <div class="card-footer border-0 bg-white">
+                                        <p class="text-body-secondary">Steve Morris</p>
+                                        <p class="text-body-tertiary">Fashion Top</p>
+                                </div>
+                            </div>
                         </div>
                         <div class="col-md-6 col-lg-4">
-                                <div class="card border-0 rounded overflow-hidden">
-                                    <div class="card-body bg-white px-md-4">
-                                        <h5 class="fw-bold ">Laptop Bag</h5>
-                                        <p class="text-body-secondary lh-lg fs-5 ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus excepturi,
-                                            quas consequatur,...
-                                        </p>
-                                        <a href="#" class="card-link text-decoration-none readhover">Read more <i class="fa-solid fa-arrow-right news_icon"></i></a>
-                                    </div>
+                            <div class="card border-0 rounded overflow-hidden">
+                                <div class="card-body bg-body-tertiary p-4">
+                                    <p class="text-body-secondary fs-6 lh-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus excepturi,
+                                        quas consequatur voluptatem sunt unde magnam voluptate soluta totam distinctio, eius.
+                                    </p>
                                 </div>
+                                <div class="card-footer border-0 bg-white">
+                                        <p class="text-body-secondary">Steve Morris</p>
+                                        <p class="text-body-tertiary">Fashion Top</p>
+                                </div>
+                            </div>
                         </div>
                         <div class="col-md-6 col-lg-4">
-                                <div class="card border-0 rounded overflow-hidden">
-                                    <div class="card-body bg-white px-md-4 ">
-                                        <h5 class="fw-bold ">Gallery Post</h5>
-                                        <p class="text-body-secondary lh-lg fs-5 ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus excepturi,
-                                            quas consequatur,...
-                                        </p>
-                                        <a href="#" class="card-link text-decoration-none readhover">Read more <i class="fa-solid fa-arrow-right news_icon"></i></a>
-                                    </div>
+                            <div class="card border-0 rounded overflow-hidden">
+                                <div class="card-body bg-body-tertiary p-4">
+                                    <p class="text-body-secondary fs-6 lh-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus excepturi,
+                                        quas consequatur voluptatem sunt unde magnam voluptate soluta totam distinctio, eius.
+                                    </p>
                                 </div>
-                        </div>
+                                <div class="card-footer border-0 bg-white">
+                                        <p class="text-body-secondary">Steve Morris</p>
+                                        <p class="text-body-tertiary">Fashion Top</p>
+                                </div>
+                            </div>
+                        </div>          
                     </div>
                 </div>
-                <div class="carousel-item ">
-                    <div class="row g-3">
-
-                            <div class="col-md-6 col-lg-4">
-                                <div class="card border-0 rounded overflow-hidden">
-                                    <div class="card-body px-md-4 bg-white">
-                                        <h5 class="fw-bold ">Basic Post</h5>
-                                        <p class="text-body-secondary lh-lg fs-5 ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus excepturi,
-                                            quas consequatur,...
-                                        </p>
-                                        <a href="#" class="card-link text-decoration-none readhover">Read more <i class="fa-solid fa-arrow-right news_icon"></i></a>
-                                    </div>
+                <div class="carousel-item">
+                    <div class="row py-5">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card border-0 rounded overflow-hidden">
+                                <div class="card-body bg-body-tertiary p-4">
+                                    <p class="text-body-secondary fs-6 lh-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus excepturi,
+                                        quas consequatur voluptatem sunt unde magnam voluptate soluta totam distinctio, eius.
+                                    </p>
+                                </div>
+                                <div class="card-footer border-0 bg-white">
+                                        <p class="text-body-secondary">Steve Morris</p>
+                                        <p class="text-body-tertiary">Fashion Top</p>
                                 </div>
                             </div>
-                            
-                            <div class="col-md-6 col-lg-4">
-                                <div class="card border-0 rounded overflow-hidden">
-                                    <div class="card-body bg-white px-md-4">
-                                        <h5 class="fw-bold ">Quote Post</h5>
-                                        <p class="text-body-secondary lh-lg fs-5 ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus excepturi,
-                                            quas consequatur,...
-                                        </p>
-                                        <a href="#" class="card-link text-decoration-none readhover">Read more <i class="fa-solid fa-arrow-right news_icon"></i></a>
-                                    </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card border-0 rounded overflow-hidden">
+                                <div class="card-body bg-body-tertiary p-4">
+                                    <p class="text-body-secondary fs-6 lh-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus excepturi,
+                                        quas consequatur voluptatem sunt unde magnam voluptate soluta totam distinctio, eius.
+                                    </p>
+                                </div>
+                                <div class="card-footer border-0 bg-white">
+                                        <p class="text-body-secondary">Steve Morris</p>
+                                        <p class="text-body-tertiary">Fashion Top</p>
                                 </div>
                             </div>
-                            <div class="col-md-6 col-lg-4">
-                                <div class="card border-0 rounded overflow-hidden">
-                                    <div class="card-body bg-white px-md-4 ">
-                                        <h5 class="fw-bold ">Simple Post</h5>
-                                        <p class="text-body-secondary lh-lg fs-5 ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus excepturi,
-                                            quas consequatur,...
-                                        </p>
-                                        <a href="#" class="card-link text-decoration-none readhover">Read more <i class="fa-solid fa-arrow-right news_icon"></i></a>
-                                    </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card border-0 rounded overflow-hidden">
+                                <div class="card-body bg-body-tertiary p-4">
+                                    <p class="text-body-secondary fs-6 lh-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus excepturi,
+                                        quas consequatur voluptatem sunt unde magnam voluptate soluta totam distinctio, eius.
+                                    </p>
+                                </div>
+                                <div class="card-footer border-0 bg-white">
+                                        <p class="text-body-secondary">Steve Morris</p>
+                                        <p class="text-body-tertiary">Fashion Top</p>
                                 </div>
                             </div>
-
-
+                        </div>          
                     </div>
-                </div>
+                </div>  
             </div>
 
-            <div class="carousel-indicators position-static">
-                <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active bg-black rounded_splider" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2" class="bg-black rounded_splider"></button>
+            <div class="carousel-indicators my-2">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active bg-black btn_look_Testimonials" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" class="bg-black btn_look_Testimonials"></button>
             </div>
+            
         </div>
-
-     </div>
+        
+    </div>
 </div>
 
-<div id="icons" class="py-5">
+<div id="Latest-News" class="py-5">
     <div class="container h-100">
-        <div class="row g-5 py-md-5">
-            <div class="col logon">
-                <img src="images/logo_01.png" alt="" width="150px" class="imagehover">
-            </div>
-            <div class="col logon">
-                <img src="images/logo_02.png" alt="" width="150px" class="imagehover">
-            </div>
-            <div class="col logonone1 logon">
-                <img src="images/logo_03.png" alt="" width="150px" class="imagehover">
-            </div>
-            <div class="col logonone3 logon">
-                <img src="images/logo_04.png" alt="" width="150px" class="imagehover">
-            </div>
-            <div class="col logonone2 logon">
-                <img src="images/logo_05.png" alt="" width="150px" class="imagehover">
-            </div>
+
+         <div class="test_content text-cent text-center">
+            <h2 class="pt-2">Latest News</h2>
+            <p class="text-body-tertiary pt-3 p-size pb-5">This is a subtitle, feel free to change it!</p>
         </div>
+
+        <div id="Latest-News-ind" class="carousel slide">
+            
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row ">
+
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card  rounded overflow-hidden border-light-subtle">
+                                <img src="images/blake-parkinson-31143-600x420.jpg" class="card-img-top imghover w-100" alt="...">
+                                <div class="card-body bg-white">
+                                    <p class="fs-5">Simple Post</p>
+                                    <p class="Latest-News_p text-body-tertiary">By Philip on April 22,2017</p>
+                                    <p class="text-body-secondary p-0 m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus Lorem ipsum dolor sit amet,...
+                                    </p>
+                                </div>
+                                <div class="card-footer border-0 bg-white mb-2 ">
+                                        <a href="#" class="card-link  text-decoration-none readhov">Read More <i class="fa-solid fa-arrow-right news_icon"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card  rounded overflow-hidden border-light-subtle">
+                                <img src="images/olu-eletu-32387-600x420.jpg" class="card-img-top w-100" alt="...">
+                                <div class="card-body bg-white">
+                                    <p class="fs-5">Laptop Bag</p>
+                                    <p class="Latest-News_p text-body-tertiary">By Philip on April 22,2017</p>
+                                    <p class="text-body-secondary p-0 m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus Lorem ipsum dolor sit amet,...
+                                    </p>
+                                </div>
+                                <div class="card-footer border-0 bg-white mb-2 ">
+                                        <a href="#" class="card-link  text-decoration-none readhov">Read More <i class="fa-solid fa-arrow-right news_icon "></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card rounded overflow-hidden border-light-subtle">
+                                <img src="images/tran-mau-tri-tam-66419-600x420.jpg" class="card-img-top w-100" alt="...">
+                                <div class="card-body bg-white">
+                                    <p class="fs-5">Gallery Post</p>
+                                    <p class="Latest-News_p text-body-tertiary">By Philip on April 22,2017</p>
+                                    <p class="text-body-secondary p-0 m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus Lorem ipsum dolor sit amet,...
+                                    </p>
+                                </div>
+                                <div class="card-footer border-0 bg-white mb-2 ">
+                                        <a href="#" class="card-link  text-decoration-none readhov">Read More <i class="fa-solid fa-arrow-right news_icon "></i></a>
+                                </div>
+                            </div>
+                        </div>
+         
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="row ">
+
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card  rounded overflow-hidden border-light-subtle">
+                                <img src="images/aleks-dorohovich-26-600x420.jpg" class="card-img-top w-100" alt="...">
+                                <div class="card-body bg-white">
+                                    <p class="fs-5">Basic Post</p>
+                                    <p class="Latest-News_p text-body-tertiary">By Philip on April 22,2017</p>
+                                    <p class="text-body-secondary p-0 m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus Lorem ipsum dolor sit amet,...
+                                    </p>
+                                </div>
+                                <div class="card-footer border-0 bg-white mb-2">
+                                        <a href="#" class="card-link  text-decoration-none readhov">Read More <i class="fa-solid fa-arrow-right news_icon "></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card rounded overflow-hidden border-light-subtle">
+                                <img src="images/lauren-mancke-60627-600x420.jpg" class="card-img-top w-100" alt="...">
+                                <div class="card-body bg-white">
+                                    <p class="fs-5">Quote Post</p>
+                                    <p class="Latest-News_p text-body-tertiary">By Philip on April 22,2017</p>
+                                    <p class="text-body-secondary p-0 m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus Lorem ipsum dolor sit amet,...
+                                    </p>
+                                </div>
+                                <div class="card-footer border-0 bg-white mb-2">
+                                        <a href="#" class="card-link  text-decoration-none readhov">Read More <i class="fa-solid fa-arrow-right news_icon "></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card rounded overflow-hidden border-light-subtle">
+                                <img src="images/blake-parkinson-31143-600x420.jpg" class="card-img-top w-100" alt="...">
+                                <div class="card-body bg-white">
+                                    <p class="fs-5">Simple Post</p>
+                                    <p class="Latest-News_p text-body-tertiary">By Philip on April 22,2017</p>
+                                    <p class="text-body-secondary p-0 m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus Lorem ipsum dolor sit amet,...
+                                    </p>
+                                </div>
+                                <div class="card-footer border-0 bg-white mb-2 ">
+                                        <a href="#" class="card-link  text-decoration-none readhov">Read More <i class="fa-solid fa-arrow-right news_icon "></i></a>
+                                </div>
+                            </div>
+                        </div>
+         
+                    </div>
+                </div>  
+            </div>
+
+            <div class="carousel-indicators my-3 position-static">
+                <button type="button" data-bs-target="#Latest-News-ind" data-bs-slide-to="0" class="active bg-black btn_look_Latest-News" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#Latest-News-ind" data-bs-slide-to="1" aria-label="Slide 2" class="bg-black btn_look_Latest-News"></button>
+            </div>
+            
+        </div>
+
     </div>
 </div>
 
-<div id="contant" class="py-5">
-    <div class="container h-100 ">
-        <div class="perant h-100 d-flex justify-content-center align-items-center p-md-3 m-md-2 ">
+<div id="Feeling-convinced">
+    <div class="container h-100">
+        <div class="content-Feeling-convinced d-flex justify-content-center align-items-center">
             <div class="child text-center">
-                <h1 class="fw-bold fs-1 lh-lg pt-1 text-white" >Feeling convinced?</h1>
-                <p class="fs-4 lh-lg text-light">I am a subtitle, feel free to change me!</p>
-                <button class="btn btn-primary rounded-pill m-auto btu_Our_work fw-medium px-4 py-3" type="button">CONTANT US</button>
+                <p class="fs-1 mb-1 mt-5">Feeling convinced?</p>
+                <p class="fs-5 text-body-secondary py-3">I am a subtitle, feel free to change me!</p>
+                <a class="btn btn-color mt-2 " href="#home" role="button">Button Next</a>
             </div>
         </div>
     </div>
 </div>
 
- <div id="Contact_Details" class="py-5">
-    <div class="container h-100 ">
+<div id="end-sectioncontent" class="py-5">
+    <div class="container h-100">
         <div class="row">
-            <div class="col-md-6 col-lg-3 my-md-4 p-md-3 lh-base">
-                <h5 class="pb-2 text-white">About us</h5>
-                <p class="text-dark-emphasis">I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur. I am text block.
-                     Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur.
+
+            <div class="col-md-6 col-lg-4">
+                <p class="text-white p_size">About us</p>
+                <p class="text-dark-emphasis">I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur. 
+                    I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur.
                 </p>
+                <p class="text-dark-emphasis">We are the champions! We are the most amazing theme of all time, yeah.</p>
             </div>
 
-            <div class="col-md-6 col-lg-3 my-md-4 p-md-3">
-                <h5 class="pb-2 text-white">Opening Hours</h5>
-                <ul class="list-unstyled lh-lg text-dark-emphasis">
-                    <li>Mon-Thu: 8:00 - 17:00</li>
-                    <li>Fri: 8:00 - 19:00</li>
-                    <li>Sat: 11:00 - 14:00</li>
-                    <li>Sun: Closed</li>
-                </ul>
-            </div>
-            <div class="col-md-6 col-lg-3 my-md-4 p-md-3">
-                <h5 class="pb-2 text-white">Pages</h5>
-                <ul class="list-unstyled lh-lg text-dark-emphasis">
-                    <li>About</li>
-                    <li>Services</li>
-                    <li>News</li>
-                    <li>Contact</li>
-                </ul>
-            </div>
-            <div class="col-md-6 col-lg-3 my-md-4 p-md-3 position-relative">
-                <h5 class="pb-2 text-white">Contact Details</h5>  
-                <img src="../bakery/images/images/contact-details-map.png" alt="" class="position-absolute bottom-0 start-0 opacity-25">              
-                <ul class="list-unstyled lh-lg text-dark-emphasis">
-                    <li ><i class="fa-solid fa-location-dot icon_Contact_Details"></i>Manchester Road 123-78B, Silictown 7854MD, Great Country</li>
-                    <li><i class="fa-solid fa-phone icon_Contact_Details"></i> +46 123 456 789</li>
-                    <li ><i class="fa-solid fa-envelope icon_Contact_Details"></i>hello@sitename.com</li>
+            <div class="col-md-6 col-lg-4">
+                <p class="text-white p_size">Opening Hours</p>
+                <ul class="list-group list-group-flush bg-transparent text-dark-emphasis ">
+                    <li class="list-group-item bg-transparent text-dark-emphasis border-dark">Monday 10AM - 9PM</li>
+                    <li class="list-group-item bg-transparent text-dark-emphasis border-dark">Tuesday 10AM - 9PM</li>
+                    <li class="list-group-item bg-transparent text-dark-emphasis border-dark">Wednesday 10AM - 9PM</li>
+                    <li class="list-group-item bg-transparent text-dark-emphasis border-dark">Thursday 10AM - 10PM</li>
+                    <li class="list-group-item bg-transparent text-dark-emphasis border-dark">Friday 10AM - 10PM</li>
+                    <li class="list-group-item bg-transparent text-dark-emphasis border-dark">Weekends 10AM - 11PM</li>
                 </ul>
             </div>
 
-
+            <div class="col-md-6 col-lg-4">
+                <p class="text-white p_size">Contact Details</p>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item bg-transparent text-dark-emphasis border-dark">Manchester Road 123-78B, Silictown 7854MD, Great Country</li>
+                    <li class="list-group-item bg-transparent text-dark-emphasis border-dark">+46 123 456 789</li>
+                    <li class="list-group-item bg-transparent text-dark-emphasis border-dark">hello@sitename.com</li>
+                    <li class="list-group-item bg-transparent text-dark-emphasis border-dark">http://www.sitename.com</li>
+                </ul>
+            </div>
+            
         </div>
     </div>
- </div>
+</div>
 
-<div id="endsection" class="py-5 w-100 ">
+<div id="endsection" class="w-100">
     <div class="container h-100 ">
         <div class="row">
-            <div class="col-md-12 col-lg-6">
+            <div class="col-md-12 col-lg-6 pt-2">
                 <p class="text-light-emphasis">Copyright 2017. All rights reserved.</p>
             </div>
-            <div class="col-md-12 col-lg-6  col_endsection position-static ">
-                <div class="iconsdiv w-75 ms-auto">
-                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook  facebook_icon"></i></a>
-                    <a href="https://www.google.com/"> <i class="fa-brands fa-google  google_icon"></i></a>
-                    <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin-in  linkedin-in_icon"></i></a>
-                    <a href="https://x.com/"><i class="fa-brands fa-twitter  twitter_icon"></i></a>
+            <div class="col-md-12 col-lg-6  col_endsection position-static  pt-2">
+                <div class="iconsdiv">
+                    <div class="aCon w-50 ms-auto">
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook icon_endsection facebook_icon"></i></a>
+                        <a href="https://www.google.com/"> <i class="fa-brands fa-google icon_endsection google_icon"></i></a>
+                        <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin-in icon_endsection linkedin-in_icon"></i></a>
+                        <a href="https://x.com/"><i class="fa-brands fa-twitter icon_endsection twitter_icon"></i></a>
+                    </div>
+                    
                 </div>
             </div>
         </div>
     </div>
 </div>
 
-<script src="js/bootstrap.bundle.min.js"></script>   
+
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
